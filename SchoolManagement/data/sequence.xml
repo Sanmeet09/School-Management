@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <data noupdate="1">
+<!--        sequence for students.details-->
+        <record id="students_details_sequence" model="ir.sequence">
+            <field name="name">students</field>
+            <field name="code">students.details</field>
+            <field name="prefix">ST</field>
+            <field name="padding">4</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+<!--        seq for teacher-->
+         <record id="teachers_details_sequence" model="ir.sequence">
+            <field name="name">Teacher</field>
+            <field name="code">teachers.details</field>
+            <field name="prefix">TE</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+    </data>
+</odoo>

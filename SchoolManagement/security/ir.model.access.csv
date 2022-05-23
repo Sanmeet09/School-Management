@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+students_details,students.details,model_students_details,base.group_user,1,1,1,1
+teachers_details,teachers.details,model_teachers_details,base.group_user,1,1,1,1
+different_college,different.college,model_different_college,base.group_user,1,1,1,1
+teachers_details_line,teachers.details.line,model_teachers_details_line,base.group_user,1,1,1,1
+students_wizards,students.wizards,model_students_wizards,base.group_user,1,1,1,1

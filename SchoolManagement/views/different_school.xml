@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+
+    <!--    form view-->
+    <record id="different_college_form_view" model="ir.ui.view">
+        <field name="name">different.college.form.view</field>
+        <field name="model">different.college</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="college_name"/>
+                        <field name="location"/>
+                        <field name="stream"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+
+    </record>
+
+    <!--    tree view-->
+    <record id="different_college_tree_view" model="ir.ui.view">
+        <field name="name">different.college.tree.view</field>
+        <field name="model">different.college</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="college_name"/>
+                <field name="location"/>
+                <field name="stream"/>
+            </tree>
+        </field>
+
+    </record>
+
+
+    <!--    action-->
+    <record id="different_college_action" model="ir.actions.act_window">
+        <field name="name">Schools</field>
+        <field name="res_model">different.college</field>
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+    <menuitem id="different_college_root_child" name="Schools" action="different_college_action"
+              parent="students_details_root"/>
+</odoo>
