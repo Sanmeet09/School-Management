@@ -4,3 +4,4 @@ teachers_details,teachers.details,model_teachers_details,base.group_user,1,1,1,1
 different_college,different.college,model_different_college,base.group_user,1,1,1,1
 teachers_details_line,teachers.details.line,model_teachers_details_line,base.group_user,1,1,1,1
 students_wizards,students.wizards,model_students_wizards,base.group_user,1,1,1,1
+teachers_wizard,teachers.wizard,model_teachers_wizard,base.group_user,1,1,1,1

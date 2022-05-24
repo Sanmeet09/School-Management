@@ -10,7 +10,7 @@ class StudentsDetails(models.Model):
     name = fields.Char(string='Reference', required=True, readonly=True, default=lambda self: _('New'))
     student_name = fields.Char('Student Name')
     roll_no = fields.Integer('Roll No')
-    age = fields.Integer('Age',compute='_cal_age')
+    age = fields.Integer('Age',compute='_cal_age',store=True)
     gender = fields.Selection(selection=[('male', 'Male'), ('female', 'Female')], default='male')
     dob = fields.Date('Date of Birth')
 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+
+    <record id="teachers_wizard_form" model="ir.ui.view">
+        <field name="name">teachers.wizard.form</field>
+        <field name="model">teachers.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group string="Teacher form">
+                    <field name="teacher_name"/>
+                    <field name="qualification"/>
+                    <field name="age"/>
+                    <field name="phone"/>
+                </group>
+                <footer>
+                    <button string="Update" type="object" name="create_teacher"/>
+                    <button string="Cancel" special="cancel" type="object"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_wizard_teachers" model="ir.actions.act_window">
+        <field name="name">Update</field>
+        <field name="res_model">teachers.wizard</field>
+        <field name="view_mode">form</field>
+         <field name="view_id" ref="teachers_wizard_form"/>
+        <field name="binding_model_id" ref="model_teachers_details"/>
+        <field name="target">new</field>
+
+    </record>
+</odoo>

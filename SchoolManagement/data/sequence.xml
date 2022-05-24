@@ -19,5 +19,14 @@
             <field name="padding">5</field>
             <field name="company_id" eval="False"/>
         </record>
+
+<!--        seq for school-->
+         <record id="school_details_sequence" model="ir.sequence">
+            <field name="name">School</field>
+            <field name="code">different.college</field>
+            <field name="prefix">SC/%(year)s/%(doy)s/</field>
+<!--            <field name="padding"></field>-->
+            <field name="company_id" eval="False"/>
+        </record>
     </data>
 </odoo>

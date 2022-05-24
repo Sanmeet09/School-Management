@@ -10,6 +10,8 @@
             <form>
                 <header>
                     <button name="create_student" type="object" string="Create Student"/>
+                    <button name="search_student" type="object" string="Search Student"/>
+                    <button name="%(action_wizard_teachers)d" type="action" string="Click here"/>
                 </header>
                 <sheet>
                     <div class="oe_title">

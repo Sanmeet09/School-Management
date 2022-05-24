@@ -13,6 +13,7 @@
         'security/ir.model.access.csv',
         'data/sequence.xml',
         'wizards/students_wizard_view.xml',
+        'wizards/teachers_wizard_view.xml',
         'views/students_details_view.xml',
         'views/teachers_details_view.xml',
         'views/different_school.xml',

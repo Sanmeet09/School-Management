@@ -17,7 +17,7 @@ class TeachersDetails(models.Model):
 
     def no_of_students(self):
         no_of_students = self.env['students.details'].search_count([('teacher_id', '=', self.id)])
-        print('no of student', no_of_students)
+        # print('no of student', no_of_students)
         self.no_of_student = no_of_students
 
     @api.model
@@ -43,6 +43,24 @@ class TeachersDetails(models.Model):
             if rec.qualification == False:
                 rec.qualification = 'Teacher'
         return res
+
+    def search_student(self):
+        for rec in self:
+            student = self.env['students.details'].search([('age','=',2002)])
+            print(student)
+        # # std_rec = []
+        # student = self.env['students.details'].search([])
+        # print(student)
+        # student_age= student.search([('age','=', 21)])
+        # print(student_age)
+        # # for rec in student:
+        # #     if rec.age <= 20:
+        # #         std_rec.append(rec)
+        # print(student)
+        #     # for searching how many students this teacher has
+        #     # student = self.env['students.details'].search([('teacher_id','=',self.id)])
+        #     # print(student)
+
 
 
 class TeacherDetailsLine(models.Model):
